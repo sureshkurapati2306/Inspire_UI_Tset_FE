@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.first-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Author information section */
+.author-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.author-info p {
+    margin: 5px 0;
+}
+
+/* List of Books section */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Two columns on desktop */
+}
+
+/* Individual book card */
+.book {
+    /* Two columns on desktop */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 50;
+  
+}
+
+/* Book image */
+.book img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* Book title */
+.book a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Date Published */
+.book p {
+    margin: 5px 0;
+}
+
+/* Sort buttons */
+.sort-buttons {
+    margin-top: 20px;
+}
+
+.sort-buttons button {
+    margin-right: 10px;
+}
+
+/* AddBook form */
+form {
+    margin-top: 20px;
+}
+
+/* Form fields */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    margin-right: 10px;
+}
+
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .books {
+        display: block;
+
+    }
+
+    .book {
+        width: 100%;
+
+    }
+}
+
+/* Desktop view - Two columns */
+@media (min-width: 769px) {
+    .books {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    h2 {
+        text-align: center;
+    }
+
+}
